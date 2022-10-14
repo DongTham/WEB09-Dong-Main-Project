@@ -1,0 +1,245 @@
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../assets/fonts/notosans-bold.3ede5aff.woff2);
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(../assets/fonts/notosans-semibold.df3e6dc4.woff2);
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../assets/fonts/notosans-regular.2cb88a13.woff2);
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 56px auto;
+}
+
+.header {
+    /* background-color: #FFFFFF; */
+    display: flex;
+    justify-content: space-between;
+    background-color: #efaaaa;
+    font: 500 14px Roboto-Medium;
+    padding: 0 16px;
+}
+
+.sidebar {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 100vh;
+    background-color: #041434;
+}
+
+.main {
+    background-color: blue;
+}
+
+.header .header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header__icon {
+    border: unset;
+    background-color: #FFFFFF;
+    background-image: url(../assets/img/Sprites.64af8f61.svg);
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.header .btn-toggle {
+    background-position: -846px -32px;
+}
+
+.header-left .header__branch {
+    display: flex;
+    font: 700 14px Roboto-Bold;
+}
+
+.sidebar .sidebar-logo {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    padding: 0 16px;
+}
+
+.sidebar-logo img {
+    height: 36px;
+}
+
+.sidebar__logo-option {
+    background-position: -424px -88px;
+    background-color: #041434;
+    padding: 0;
+    margin-right: 16px;
+    height: 24px;
+    width: 24px;
+}
+
+.sidebar .sidebar-menu {
+    padding: 20px 12px;
+}
+
+.menu-button {
+    font: 500 14px Roboto-Medium;
+    border: unset;
+    height: 44px;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    background-color: #041434;
+    color: #869AB8;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 12px;
+}
+
+.menu__button-icon {
+    background-image: url(../assets/img/Sprites.64af8f61.svg);
+    background-repeat: no-repeat;
+    margin-right: 12px;
+    height: 24px;
+    width: 24px;
+    /* background-color: #fff; */
+}
+
+.menu-button:hover {
+    background-color: #27395E;
+}
+
+.menu-button:focus {
+    background-color: #A7C4FF;
+    color: #FFFFFF;
+}
+
+.sidebar__menu-item .overview-icon {
+    background-position: -30px -1628px;
+}
+
+.menu-button:focus>.overview-icon {
+    background-position: -30px -1585px;
+}
+
+.sidebar__menu-item .cash-icon {
+    background-position: -73px -1628px;
+}
+
+.menu-button:focus>.cash-icon {
+    background-position: -73px -1585px;
+}
+
+.sidebar__menu-item .deposits-icon {
+    background-position: -117px -1629px;
+}
+
+.menu-button:focus>.deposits-icon {
+    background-position: -117px -1586px;
+}
+
+.sidebar__menu-item .purchase-icon {
+    background-position: -161px -1629px;
+}
+
+.menu-button:focus>.purchase-icon {
+    background-position: -161px -1586px;
+}
+
+.sidebar__menu-item .sell-icon {
+    background-position: -205px -1629px;
+}
+
+.menu-button:focus>.sell-icon {
+    background-position: -205px -1586px;
+}
+
+.sidebar__menu-item .invoice-icon {
+    background-position: -249px -1629px;
+}
+
+.menu-button:focus>.invoice-icon {
+    background-position: -249px -1586px;
+}
+
+.sidebar__menu-item .warehouse-icon {
+    background-position: -291px -1629px;
+}
+
+.menu-button:focus>.warehouse-icon {
+    background-position: -291px -1586px;
+}
+
+.sidebar__menu-item .tools-icon {
+    background-position: -336px -1629px;
+}
+
+.menu-button:focus>.tools-icon {
+    background-position: -336px -1586px;
+}
+
+.sidebar__menu-item .asset-icon {
+    background-position: -379px -1629px;
+}
+
+.menu-button:focus>.asset-icon {
+    background-position: -379px -1586px;
+}
+
+.sidebar__menu-item .tax-icon {
+    background-position: -423px -1630px;
+}
+
+.menu-button:focus>.tax-icon {
+    background-position: -423px -1587px;
+}
+
+.sidebar__menu-item .price-icon {
+    background-position: -468px -1630px;
+}
+
+.menu-button:focus>.price-icon {
+    background-position: -468px -1587px;
+}
+
+.sidebar__menu-item .synthetic-icon {
+    background-position: -510px -1629px;
+}
+
+.menu-button:focus>.synthetic-icon {
+    background-position: -510px -1586px;
+}
+
+.sidebar__menu-item .budget-icon {
+    background-position: -378px -1660px;
+}
+
+.menu-button:focus>.budget-icon {
+    background-position: -423px -1660px;
+}
+
+.sidebar__menu-item .report-icon {
+    background-position: -547px -1630px;
+}
+
+.menu-button:focus>.report-icon {
+    background-position: -547px -1587px;
+}
+
+.sidebar__menu-item .finance-icon {
+    background-position: -205px -1661px;
+}
+
+.menu-button:focus>.finance-icon {
+    background-position: -249px -1661px;
+}
