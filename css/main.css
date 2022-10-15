@@ -18,11 +18,11 @@ body {
     overflow-y: hidden;
 }
 
-::-webkit-scrollbar {
+
+/* ::-webkit-scrollbar {
     width: 0px;
     background: transparent;
-    /* make scrollbar transparent */
-}
+} */
 
 .container {
     display: grid;
@@ -356,6 +356,10 @@ body {
 
 .main .main-body {
     background-color: #FFFFFF;
+    /* overflow-x: scroll; */
+    scroll-behavior: smooth;
+    position: relative;
+    flex: 1;
 }
 
 .main__body-function .function__search {
@@ -428,8 +432,10 @@ table {
 table th {
     position: sticky;
     top: -25px;
+    z-index: 999;
     border-top: 1px solid #E0E0E0;
     background-color: #EEEEEE;
+    min-width: 200px;
 }
 
 table th,
