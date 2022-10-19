@@ -1,3 +1,9 @@
+@import url(./layout/button.css);
+@import url(./layout/footer.css);
+@import url(./layout/function.css);
+@import url(./layout/header.css);
+@import url(./layout/sidebar.css);
+@import url(./layout/table.css);
 @font-face {
     font-family: Roboto-Bold;
     src: url(../assets/fonts/notosans-bold.3ede5aff.woff2);
