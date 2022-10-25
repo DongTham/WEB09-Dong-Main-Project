@@ -4,6 +4,7 @@
 @import url(./layout/header.css);
 @import url(./layout/sidebar.css);
 @import url(./layout/table.css);
+@import url(./layout/scrollbar.css);
 @font-face {
     font-family: Roboto-Bold;
     src: url(../assets/fonts/notosans-bold.3ede5aff.woff2);
@@ -21,35 +22,44 @@
 
 body {
     margin: 0;
-    overflow-y: hidden;
-}
-
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
+    overflow: hidden;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 200px auto;
-    grid-template-rows: 56px auto;
+    display: flex;
     background-color: #F7F7F7;
     outline: none;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: calc(100% - 200px);
+    flex: 1;
+}
+
 .main {
     overflow-y: scroll;
-    padding: 24px 0 0 24px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+    padding: 24px 24px 0 24px;
     font: 500 14px Roboto-Medium;
     height: calc(100vh - 80px);
-    background-color: #F7F7F7;
 }
 
 .main .main-header {
     display: flex;
     justify-content: space-between;
     background-color: #F7F7F7;
-    padding: 0 24px 24px 0;
+    padding: 0 0 24px 0;
+}
+
+.main .main-body {
+    position: relative;
+    background-color: #FFFFFF;
+    /* overflow-x: scroll; */
 }
 
 .main__header-title {
@@ -59,8 +69,13 @@ body {
     line-height: 26px;
 }
 
+.main__header-add .btn-add {
+    color: #FFFFFF;
+}
+
 .input-main {
     height: 36px;
+    width: 100%;
     padding: 0 8px 0 12px;
     border: 1px solid #E0E0E0;
     border-radius: 4px;
@@ -69,23 +84,8 @@ body {
     box-sizing: border-box;
 }
 
-.main .main-body {
-    background-color: #FFFFFF;
-    /* overflow-x: scroll; */
-    scroll-behavior: smooth;
-    position: relative;
-    flex: 1;
-}
-
-.main__body-function .function__search {
-    position: relative;
-    min-width: 260px;
-}
-
 .input-main::placeholder {
     color: #9E9E9E;
-    /* font: 400 14px Roboto-Regular; */
-    /* line-height: 18px; */
 }
 
 .input-main:hover,
@@ -102,22 +102,11 @@ body {
     background-color: #FFFFFF;
 }
 
-.main__body-function {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 24px;
-}
-
-.main-body .btn-reload {
-    background-position: -1098px -90px;
-    margin-left: 24px;
-}
-
-.main__body-function .btn-search {
-    position: absolute;
-    left: calc(100% - 100px);
-    background-position: -425px -33px;
+.main .main__icon {
+    background-color: unset;
+    height: 24px;
+    width: 24px;
+    margin: 0 6px;
 }
 
 .main__body-footer {
@@ -133,4 +122,9 @@ body {
 
 .btn-seclectdown {
     background-position: -564px -365px;
+}
+
+.align-center {
+    justify-content: center;
+    align-items: center;
 }

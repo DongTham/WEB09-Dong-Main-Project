@@ -1,45 +1,48 @@
 .main__body-table {
+    display: flex;
     position: relative;
-    padding: 0 16px;
 }
 
 table {
+    position: relative;
     border-collapse: separate;
     border-spacing: 0;
     font: 700 14px Roboto-Bold;
-}
-
-table th {
-    position: sticky;
-    top: -25px;
-    z-index: 999;
-    border-top: 1px solid #E0E0E0;
-    background-color: #EEEEEE;
+    z-index: 1;
+    padding: 16px 0;
+    background-color: #FFFFFF;
 }
 
 table th,
 table td {
+    left: 76px;
+    right: 50px;
+    white-space: nowrap;
     border-bottom: 1px solid #E0E0E0;
-    border-left: 0;
     border-right: 0;
     height: 48px;
     padding: 0 16px;
+    outline: none;
     box-sizing: border-box;
 }
 
-tr:first-child th:first-child {
+table td {
+    border-right: 1px dotted #E0E0E0;
+}
+
+tr:first-child th:nth-child(2) {
     border-top-left-radius: 4px;
 }
 
-tr:first-child th:last-child {
+tr:first-child th:nth-last-child(2) {
     border-top-right-radius: 4px;
 }
 
-tr:last-child td:first-child {
+tr:last-child td:nth-child(2) {
     border-bottom-left-radius: 4px;
 }
 
-tr:last-child td:last-child {
+tr:last-child td:nth-last-child(2) {
     border-bottom-right-radius: 4px;
 }
 
@@ -49,12 +52,63 @@ tr:first-child td {
 
 tr td:first-child,
 tr th:first-child {
-    border-left: 1px solid #E0E0E0;
+    position: sticky;
+    left: 0;
+    z-index: 5;
+    min-width: 16px;
+    max-width: 16px;
+    width: 16px;
+    padding: 0;
+    background-color: #FFFFFF;
+    border: unset;
 }
 
 tr td:last-child,
 tr th:last-child {
+    position: sticky;
+    right: 0;
+    z-index: 5;
+    min-width: 16px;
+    max-width: 16px;
+    width: 16px;
+    padding: 0;
+    background-color: #FFFFFF;
+    border: unset;
+}
+
+tr td:nth-child(2),
+tr th:nth-child(2) {
+    position: sticky;
+    left: 16px;
+    z-index: 5;
+    border-left: 1px solid #E0E0E0;
+}
+
+tr td:nth-last-child(2),
+tr th:nth-last-child(2) {
+    position: sticky;
+    right: 16px;
+    z-index: 5;
+    border-left: 1px dotted #E0E0E0;
     border-right: 1px solid #E0E0E0;
+}
+
+tr:first-child th {
+    position: sticky;
+    text-align: left;
+    top: -25px;
+    z-index: 10;
+    border-top: 1px solid #E0E0E0;
+    border-right: 1px solid #E0E0E0;
+    background-color: #EEEEEE;
+    box-sizing: border-box;
+}
+
+tr:first-child th:first-child,
+tr:first-child th:last-child {
+    cursor: auto;
+    border: unset;
+    background-color: #FFFFFF;
 }
 
 table th:hover {
@@ -68,4 +122,10 @@ table tbody tr {
 
 table tbody tr:hover {
     background-color: #F2F2F2;
+}
+
+th input,
+td input {
+    height: 20px;
+    width: 20px;
 }

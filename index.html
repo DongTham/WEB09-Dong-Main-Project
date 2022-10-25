@@ -12,39 +12,7 @@
 
 <body>
     <div class="container">
-        <div class="header">
-            <div class="header-left">
-                <button class="btn-icon header__icon btn-toggle"></button>
-                <button class="header__branch">
-                    <span class="header__branch-name"></span>CÔNG TY TNHH SẢN XUẤT - THƯƠNG MẠI - DỊCH VỤ QUI PHÚC</span>
-                    <div class="btn-icon header__icon btn-down"></div>
-                </button>
-            </div>
-            <div class="header-right">
-                <button class="header__actions">
-                    <div class="btn-icon header__icon btn-features"></div>
-                </button>
-                <button class="header__actions">
-                    <div class="btn-icon header__icon btn-setting"></div>
-                </button>
-                <button class="header__actions">
-                    <div class="btn-icon header__icon btn-chat"></div>
-                </button>
-                <button class="header__actions">
-                    <div class="btn-icon header__icon btn-help"></div>
-                </button>
-                <button class="header__actions">
-                    <div class="btn-icon header__icon btn-notify"></div>
-                </button>
-                <button class="profile">
-                    <img src="https://id.misa.vn/image/getavatar?userId=b9616c97-acf9-4d72-adfa-da91bbed0d93&width=32&height=32" alt="" class="profile__avatar">
-                    <span class="profile__name">Nguyễn Văn Mạnh</span>
-                    <div class="btn-icon header__icon profile__icon"></div>
-                </button>
-            </div>
-        </div>
-
-        <div class="sidebar">
+        <div class="sidebar minimize">
             <div>
                 <div class="sidebar-logo">
                     <button class="btn-icon header__icon sidebar__logo-option"></button>
@@ -57,7 +25,7 @@
                         </button>
                     </div>
                     <div class="sidebar__menu-item">
-                        <button class="menu-button"><div class="btn-icon menu__button-icon cash-icon"></div>
+                        <button class="menu-button active"><div class="btn-icon menu__button-icon cash-icon"></div>
                             Tiền mặt
                         </button>
                     </div>
@@ -101,366 +69,431 @@
                     <div class="sidebar__menu-item">
                         <button class="menu-button"><div class="btn-icon menu__button-icon finance-icon"></div>Phân tích tài chính</button>
                     </div>
-                    <div class="sidebar__menu-item">
-                        <button class="menu-button"><div class="btn-icon menu__button-icon finance-icon"></div>Phân tích tài chính</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="header">
+                <div class="header-left">
+                    <button class="btn-icon header__icon btn-toggle"></button>
+                    <button class="btn header__branch">
+                        <span class="header__branch-name"></span>CÔNG TY TNHH SẢN XUẤT - THƯƠNG MẠI - DỊCH VỤ QUI PHÚC</span>
+                        <div class="btn-icon header__icon btn-down"></div>
+                    </button>
+                </div>
+                <div class="header-right">
+                    <button class="header__actions">
+                        <div class="btn-icon header__icon btn-features"></div>
+                    </button>
+                    <button class="header__actions">
+                        <div class="btn-icon header__icon btn-setting"></div>
+                    </button>
+                    <button class="header__actions">
+                        <div class="btn-icon header__icon btn-chat"></div>
+                    </button>
+                    <button class="header__actions">
+                        <div class="btn-icon header__icon btn-help"></div>
+                    </button>
+                    <button class="header__actions">
+                        <div class="btn-icon header__icon btn-notify"></div>
+                    </button>
+                    <button class="btn profile">
+                        <img src="https://id.misa.vn/image/getavatar?userId=b9616c97-acf9-4d72-adfa-da91bbed0d93&width=32&height=32" alt="" class="profile__avatar">
+                        <span class="profile__name">Nguyễn Văn Mạnh</span>
+                        <div class="btn-icon header__icon profile__icon"></div>
+                    </button>
+                </div>
+            </div>
+            <div class="main">
+                <div class="main-header">
+                    <div class="main__header-title">
+                        <span>Nhân viên</span>
                     </div>
-                    <div class="sidebar__menu-item">
-                        <button class="menu-button"><div class="btn-icon menu__button-icon finance-icon"></div>Phân tích tài chính</button>
+                    <div class="main__header-add">
+                        <button class="btn btn-add">Thêm mới nhân viên</button>
                     </div>
-                    <div class="sidebar__menu-item">
-                        <button class="menu-button"><div class="btn-icon menu__button-icon finance-icon"></div>Phân tích tài chính</button>
+                </div>
+                <div class="main-body">
+                    <div class="main__body-function">
+                        <div class="function-left">
+                            <button class="btn batch-operation">
+                                <div class="button-text align-center">
+                                    <span>Thực hiện hàng loạt</span>
+                                    <div class="btn-icon btn-batch-operation"></div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="function-right">
+                            <div class="function__search">
+                                <input type="text" class="input-main" placeholder="Tìm theo mã, tên nhân viên">
+                                </input>
+                                <button class="btn-icon btn-search"></button>
+                            </div>
+                            <button class="btn-icon main__icon btn-reload"></button>
+                            <button class="btn-icon main__icon btn-export"></button>
+                            <button class="btn-icon main__icon btn-filter"></button>
+                        </div>
+
                     </div>
-                    <div class="sidebar__menu-item">
-                        <button class="menu-button"><div class="btn-icon menu__button-icon finance-icon"></div>Phân tích tài chính</button>
+                    <div class="main__body-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>
+                                        <input type="checkbox">
+                                    </th>
+                                    <th>MÃ NHÂN VIÊN</th>
+                                    <th>TÊN NHÂN VIÊN</th>
+                                    <th>GIỚI TÍNH</th>
+                                    <th>NGÀY SINH</th>
+                                    <th>SỐ CMND</th>
+                                    <th>CHỨC DANH</th>
+                                    <th>TÊN ĐƠN VỊ</th>
+                                    <th>SỐ TÀI KHOẢN</th>
+                                    <th>TÊN NGÂN HÀNG</th>
+                                    <th>CHI NHÁNH TK NGÂN HÀNG</th>
+                                    <th>CHỨC NĂNG</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>0012</td>
+                                    <td>Nguyễn Văn Liệt</td>
+                                    <td>Nam</td>
+                                    <td>31/12/1969</td>
+                                    <td>362520865</td>
+                                    <td>Trưởng Nhóm</td>
+                                    <td>Xay Keo - Phối tdộn</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Sửa</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>0012</td>
+                                    <td>Nguyễn Văn Liệt</td>
+                                    <td>Nam</td>
+                                    <td>31/12/1969</td>
+                                    <td>362520865</td>
+                                    <td>Trưởng Nhóm</td>
+                                    <td>Xay Keo - Phối tdộn</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Sửa</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>0012</td>
+                                    <td>Nguyễn Văn Liệt</td>
+                                    <td>Nam</td>
+                                    <td>31/12/1969</td>
+                                    <td>362520865</td>
+                                    <td>Trưởng Nhóm</td>
+                                    <td>Xay Keo - Phối tdộn</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Sửa</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>0012</td>
+                                    <td>Nguyễn Văn Liệt</td>
+                                    <td>Nam</td>
+                                    <td>31/12/1969</td>
+                                    <td>362520865</td>
+                                    <td>Trưởng Nhóm</td>
+                                    <td>Xay Keo - Phối tdộn</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Sửa</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>0012</td>
+                                    <td>Nguyễn Văn Liệt</td>
+                                    <td>Nam</td>
+                                    <td>31/12/1969</td>
+                                    <td>362520865</td>
+                                    <td>Trưởng Nhóm</td>
+                                    <td>Xay Keo - Phối tdộn</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Sửa</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>0012</td>
+                                    <td>Nguyễn Văn Liệt</td>
+                                    <td>Nam</td>
+                                    <td>31/12/1969</td>
+                                    <td>362520865</td>
+                                    <td>Trưởng Nhóm</td>
+                                    <td>Xay Keo - Phối tdộn</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Sửa</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>0012</td>
+                                    <td>Nguyễn Văn Liệt</td>
+                                    <td>Nam</td>
+                                    <td>31/12/1969</td>
+                                    <td>362520865</td>
+                                    <td>Trưởng Nhóm</td>
+                                    <td>Xay Keo - Phối tdộn</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Sửa</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>0012</td>
+                                    <td>Nguyễn Văn Liệt</td>
+                                    <td>Nam</td>
+                                    <td>31/12/1969</td>
+                                    <td>362520865</td>
+                                    <td>Trưởng Nhóm</td>
+                                    <td>Xay Keo - Phối tdộn</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Sửa</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>0012</td>
+                                    <td>Nguyễn Văn Liệt</td>
+                                    <td>Nam</td>
+                                    <td>31/12/1969</td>
+                                    <td>362520865</td>
+                                    <td>Trưởng Nhóm</td>
+                                    <td>Xay Keo - Phối tdộn</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Sửa</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>0012</td>
+                                    <td>Nguyễn Văn Liệt</td>
+                                    <td>Nam</td>
+                                    <td>31/12/1969</td>
+                                    <td>362520865</td>
+                                    <td>Trưởng Nhóm</td>
+                                    <td>Xay Keo - Phối tdộn</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Sửa</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>0012</td>
+                                    <td>Nguyễn Văn Liệt</td>
+                                    <td>Nam</td>
+                                    <td>31/12/1969</td>
+                                    <td>362520865</td>
+                                    <td>Trưởng Nhóm</td>
+                                    <td>Xay Keo - Phối tdộn</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Sửa</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>0012</td>
+                                    <td>Nguyễn Văn Liệt</td>
+                                    <td>Nam</td>
+                                    <td>31/12/1969</td>
+                                    <td>362520865</td>
+                                    <td>Trưởng Nhóm</td>
+                                    <td>Xay Keo - Phối tdộn</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Sửa</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>0012</td>
+                                    <td>Nguyễn Văn Liệt</td>
+                                    <td>Nam</td>
+                                    <td>31/12/1969</td>
+                                    <td>362520865</td>
+                                    <td>Trưởng Nhóm</td>
+                                    <td>Xay Keo - Phối tdộn</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Sửa</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>0012</td>
+                                    <td>Nguyễn Văn Liệt</td>
+                                    <td>Nam</td>
+                                    <td>31/12/1969</td>
+                                    <td>362520865</td>
+                                    <td>Trưởng Nhóm</td>
+                                    <td>Xay Keo - Phối tdộn</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Sửa</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>0012</td>
+                                    <td>Nguyễn Văn Liệt</td>
+                                    <td>Nam</td>
+                                    <td>31/12/1969</td>
+                                    <td>362520865</td>
+                                    <td>Trưởng Nhóm</td>
+                                    <td>Xay Keo - Phối tdộn</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Sửa</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>0012</td>
+                                    <td>Nguyễn Văn Liệt</td>
+                                    <td>Nam</td>
+                                    <td>31/12/1969</td>
+                                    <td>362520865</td>
+                                    <td>Trưởng Nhóm</td>
+                                    <td>Xay Keo - Phối tdộn</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Sửa</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>0012</td>
+                                    <td>Nguyễn Văn Liệt</td>
+                                    <td>Nam</td>
+                                    <td>31/12/1969</td>
+                                    <td>362520865</td>
+                                    <td>Trưởng Nhóm</td>
+                                    <td>Xay Keo - Phối tdộn</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Sửa</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="sidebar__menu-item">
-                        <button class="menu-button"><div class="btn-icon menu__button-icon finance-icon"></div>Phân tích tài chính</button>
-                    </div>
-                    <div class="sidebar__menu-item">
-                        <button class="menu-button"><div class="btn-icon menu__button-icon finance-icon"></div>Phân tích tài chính</button>
-                    </div>
-                    <div class="sidebar__menu-item">
-                        <button class="menu-button"><div class="btn-icon menu__button-icon finance-icon"></div>Phân tích tài chính</button>
+                    <div class="main__body-footer">
+                        <div class="body__footer-left">
+                            <p>Tổng số: <b>1035</b> bản ghi</p>
+                        </div>
+                        <div class="body__footer-right">
+                            <div class="select-record">
+                                <input type="text" class="select__record-input" value="20 bản ghi trên 1 trang">
+                                <button class="btn-icon btn-selectdown"></button>
+                                <div class="selectbox">
+                                    <div class="selectbox-item">10 bản ghi trên 1 trang</div>
+                                    <div class="selectbox-item">20 bản ghi trên 1 trang</div>
+                                    <div class="selectbox-item">30 bản ghi trên 1 trang</div>
+                                    <div class="selectbox-item">50 bản ghi trên 1 trang</div>
+                                    <div class="selectbox-item">100 bản ghi trên 1 trang</div>
+                                </div>
+                            </div>
+                            <button class="btn btn-prev">Trước</button>
+                            <div class="btn btn-pagination"></div>
+                            <button class="btn btn-next">Sau</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="main">
-            <div class="main-header">
-                <div class="main__header-title">
-                    <span>Nhân viên</span>
-                </div>
-                <div class="main__header-add">
-                    <button class="btn btn-add">Thêm mới nhân viên</button>
-                </div>
-            </div>
-            <div class="main-body">
-                <div class="main__body-function">
-                    <input type="text" class="input-main function__search" placeholder="Tìm theo mã, tên nhân viên">
-                    <button class="btn-icon btn-search"></button>
-                    </input>
-                    <button class="btn-icon btn-reload"></button>
-                </div>
-                <div class="main__body-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>
-                                    <input type="checkbox">
-                                </th>
-                                <th>MÃ NHÂN VIÊN</th>
-                                <th>TÊN NHÂN VIÊN</th>
-                                <th>GIỚI TÍNH</th>
-                                <th>NGÀY SINH</th>
-                                <th>SỐ CMND</th>
-                                <th>CHỨC DANH</th>
-                                <th>TÊN ĐƠN VỊ</th>
-                                <th>SỐ TÀI KHOẢN</th>
-                                <th>TÊN NGÂN HÀNG</th>
-                                <th>CHI NHÁNH TK NGÂN HÀNG</th>
-                                <th>CHỨC NĂNG</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <input type="checkbox">
-                                </td>
-                                <td>0012</td>
-                                <td>Nguyễn Văn Liệt</td>
-                                <td>Nam</td>
-                                <td>31/12/1969</td>
-                                <td>362520865</td>
-                                <td>Trưởng Nhóm</td>
-                                <td>Xay Keo - Phối tdộn</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>Sửa</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox">
-                                </td>
-                                <td>0012</td>
-                                <td>Nguyễn Văn Liệt</td>
-                                <td>Nam</td>
-                                <td>31/12/1969</td>
-                                <td>362520865</td>
-                                <td>Trưởng Nhóm</td>
-                                <td>Xay Keo - Phối tdộn</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>Sửa</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox">
-                                </td>
-                                <td>0012</td>
-                                <td>Nguyễn Văn Liệt</td>
-                                <td>Nam</td>
-                                <td>31/12/1969</td>
-                                <td>362520865</td>
-                                <td>Trưởng Nhóm</td>
-                                <td>Xay Keo - Phối tdộn</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>Sửa</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox">
-                                </td>
-                                <td>0012</td>
-                                <td>Nguyễn Văn Liệt</td>
-                                <td>Nam</td>
-                                <td>31/12/1969</td>
-                                <td>362520865</td>
-                                <td>Trưởng Nhóm</td>
-                                <td>Xay Keo - Phối tdộn</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>Sửa</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox">
-                                </td>
-                                <td>0012</td>
-                                <td>Nguyễn Văn Liệt</td>
-                                <td>Nam</td>
-                                <td>31/12/1969</td>
-                                <td>362520865</td>
-                                <td>Trưởng Nhóm</td>
-                                <td>Xay Keo - Phối tdộn</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>Sửa</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox">
-                                </td>
-                                <td>0012</td>
-                                <td>Nguyễn Văn Liệt</td>
-                                <td>Nam</td>
-                                <td>31/12/1969</td>
-                                <td>362520865</td>
-                                <td>Trưởng Nhóm</td>
-                                <td>Xay Keo - Phối tdộn</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>Sửa</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox">
-                                </td>
-                                <td>0012</td>
-                                <td>Nguyễn Văn Liệt</td>
-                                <td>Nam</td>
-                                <td>31/12/1969</td>
-                                <td>362520865</td>
-                                <td>Trưởng Nhóm</td>
-                                <td>Xay Keo - Phối tdộn</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>Sửa</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox">
-                                </td>
-                                <td>0012</td>
-                                <td>Nguyễn Văn Liệt</td>
-                                <td>Nam</td>
-                                <td>31/12/1969</td>
-                                <td>362520865</td>
-                                <td>Trưởng Nhóm</td>
-                                <td>Xay Keo - Phối tdộn</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>Sửa</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox">
-                                </td>
-                                <td>0012</td>
-                                <td>Nguyễn Văn Liệt</td>
-                                <td>Nam</td>
-                                <td>31/12/1969</td>
-                                <td>362520865</td>
-                                <td>Trưởng Nhóm</td>
-                                <td>Xay Keo - Phối tdộn</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>Sửa</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox">
-                                </td>
-                                <td>0012</td>
-                                <td>Nguyễn Văn Liệt</td>
-                                <td>Nam</td>
-                                <td>31/12/1969</td>
-                                <td>362520865</td>
-                                <td>Trưởng Nhóm</td>
-                                <td>Xay Keo - Phối tdộn</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>Sửa</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox">
-                                </td>
-                                <td>0012</td>
-                                <td>Nguyễn Văn Liệt</td>
-                                <td>Nam</td>
-                                <td>31/12/1969</td>
-                                <td>362520865</td>
-                                <td>Trưởng Nhóm</td>
-                                <td>Xay Keo - Phối tdộn</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>Sửa</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox">
-                                </td>
-                                <td>0012</td>
-                                <td>Nguyễn Văn Liệt</td>
-                                <td>Nam</td>
-                                <td>31/12/1969</td>
-                                <td>362520865</td>
-                                <td>Trưởng Nhóm</td>
-                                <td>Xay Keo - Phối tdộn</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>Sửa</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox">
-                                </td>
-                                <td>0012</td>
-                                <td>Nguyễn Văn Liệt</td>
-                                <td>Nam</td>
-                                <td>31/12/1969</td>
-                                <td>362520865</td>
-                                <td>Trưởng Nhóm</td>
-                                <td>Xay Keo - Phối tdộn</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>Sửa</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox">
-                                </td>
-                                <td>0012</td>
-                                <td>Nguyễn Văn Liệt</td>
-                                <td>Nam</td>
-                                <td>31/12/1969</td>
-                                <td>362520865</td>
-                                <td>Trưởng Nhóm</td>
-                                <td>Xay Keo - Phối tdộn</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>Sửa</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox">
-                                </td>
-                                <td>0012</td>
-                                <td>Nguyễn Văn Liệt</td>
-                                <td>Nam</td>
-                                <td>31/12/1969</td>
-                                <td>362520865</td>
-                                <td>Trưởng Nhóm</td>
-                                <td>Xay Keo - Phối tdộn</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>Sửa</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox">
-                                </td>
-                                <td>0012</td>
-                                <td>Nguyễn Văn Liệt</td>
-                                <td>Nam</td>
-                                <td>31/12/1969</td>
-                                <td>362520865</td>
-                                <td>Trưởng Nhóm</td>
-                                <td>Xay Keo - Phối tdộn</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>Sửa</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox">
-                                </td>
-                                <td>0012</td>
-                                <td>Nguyễn Văn Liệt</td>
-                                <td>Nam</td>
-                                <td>31/12/1969</td>
-                                <td>362520865</td>
-                                <td>Trưởng Nhóm</td>
-                                <td>Xay Keo - Phối tdộn</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>Sửa</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="main__body-footer">
-                    <div class="body__footer-left">
-                        <p>Tổng số: <b>1035</b> bản ghi</p>
-                    </div>
-                    <div class="body__footer-right">
-                        <div class="select-record">
-                            <input type="text" class="select__record-input" value="20 bản ghi trên 1 trang">
-                            <button class="btn-icon btn-selectdown"></button>
-                            <div class="selectbox">
-                                <div class="selectbox-item">10 bản ghi trên 1 trang</div>
-                                <div class="selectbox-item">20 bản ghi trên 1 trang</div>
-                                <div class="selectbox-item">30 bản ghi trên 1 trang</div>
-                                <div class="selectbox-item">50 bản ghi trên 1 trang</div>
-                                <div class="selectbox-item">100 bản ghi trên 1 trang</div>
-                            </div>
-                        </div>
-                        <button class="btn btn-prev">Trước</button>
-                        <div class="btn btn-pagination"></div>
-                        <button class="btn btn-next">Sau</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </div>
     <script src="./js/main.js"></script>
 </body>

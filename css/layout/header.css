@@ -38,10 +38,9 @@
 .header .header__branch {
     display: flex;
     align-items: center;
-    border: unset;
     background-color: #FFFFFF;
     width: 100%;
-    cursor: pointer;
+    padding: 0;
 }
 
 .header .btn-down {
@@ -51,7 +50,6 @@
 .header__branch,
 .profile {
     font: 500 14px Roboto-Medium;
-    padding: 0;
     height: 32px;
 }
 
@@ -148,10 +146,7 @@
 .header-right .profile {
     display: flex;
     align-items: center;
-    border: unset;
     background-color: unset;
-    cursor: pointer;
-    padding: 0 16px;
 }
 
 .header-right .profile img {

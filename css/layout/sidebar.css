@@ -1,8 +1,8 @@
 .sidebar {
-    grid-row-start: 1;
-    grid-row-end: 3;
     min-height: 100vh;
+    width: 200px;
     background-color: #004137;
+    white-space: nowrap;
 }
 
 .sidebar .sidebar-logo {
@@ -26,13 +26,24 @@
     margin-right: 16px;
 }
 
-.sidebar .sidebar-menu {
+.sidebar-menu {
     padding: 20px 12px;
     height: calc(100vh - 96px);
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
+
+/* .minimize {
+    width: 56px;
+}
+
+.minimize .menu-button {
+    width: auto;
+} */
+
 .menu-button {
+    position: relative;
     font: 500 14px Roboto-Medium;
     border: unset;
     height: 44px;
