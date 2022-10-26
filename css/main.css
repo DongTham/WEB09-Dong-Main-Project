@@ -1,10 +1,11 @@
-@import url(./layout/button.css);
+@import url(./components/button.css);
 @import url(./layout/footer.css);
-@import url(./layout/function.css);
+@import url(./components/function.css);
 @import url(./layout/header.css);
 @import url(./layout/sidebar.css);
-@import url(./layout/table.css);
-@import url(./layout/scrollbar.css);
+@import url(./components/table.css);
+@import url(./components/scrollbar.css);
+@import url(./components/dropdown.css);
 @font-face {
     font-family: Roboto-Bold;
     src: url(../assets/fonts/notosans-bold.3ede5aff.woff2);
@@ -41,8 +42,6 @@ body {
 
 .main {
     overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
     position: relative;
     padding: 24px 24px 0 24px;
     font: 500 14px Roboto-Medium;
@@ -57,9 +56,11 @@ body {
 }
 
 .main .main-body {
+    display: flex;
+    flex-direction: column;
     position: relative;
     background-color: #FFFFFF;
-    /* overflow-x: scroll; */
+    overflow-x: scroll;
 }
 
 .main__header-title {

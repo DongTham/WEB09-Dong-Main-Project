@@ -1,22 +1,21 @@
 .main__body-table {
     display: flex;
-    position: relative;
+    background-color: #FFFFFF;
 }
 
 table {
+    width: 100%;
     position: relative;
     border-collapse: separate;
     border-spacing: 0;
     font: 700 14px Roboto-Bold;
-    z-index: 1;
     padding: 16px 0;
-    background-color: #FFFFFF;
+    scroll-behavior: smooth;
+    /* overflow-y: scroll; */
 }
 
 table th,
 table td {
-    left: 76px;
-    right: 50px;
     white-space: nowrap;
     border-bottom: 1px solid #E0E0E0;
     border-right: 0;
@@ -27,6 +26,7 @@ table td {
 }
 
 table td {
+    background-color: #FFFFFF;
     border-right: 1px dotted #E0E0E0;
 }
 
@@ -97,6 +97,7 @@ tr:first-child th {
     position: sticky;
     text-align: left;
     top: -25px;
+    bottom: 0;
     z-index: 10;
     border-top: 1px solid #E0E0E0;
     border-right: 1px solid #E0E0E0;
@@ -117,15 +118,20 @@ table th:hover {
 
 table tbody tr {
     font: 400 14px Roboto-Regular;
-    background-color: #FFFFFF;
 }
 
-table tbody tr:hover {
+table tbody tr:hover>td {
     background-color: #F2F2F2;
+}
+
+tr:hover>td:first-child,
+tr:hover>td:last-child {
+    background-color: #FFFFFF;
 }
 
 th input,
 td input {
     height: 20px;
     width: 20px;
+    cursor: pointer;
 }

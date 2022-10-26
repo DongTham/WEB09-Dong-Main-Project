@@ -5,6 +5,8 @@
     padding: 16px;
     margin: 20px 0 0 0;
     background-color: #FFFFFF;
+    position: sticky;
+    left: 0;
 }
 
 .main__body-function .function-left {
@@ -64,7 +66,8 @@
     padding: 0 12px 0 16px;
 }
 
-.function-left .batch-operation:hover {
+.function-left .batch-operation:hover,
+.function-left .batch-operation:focus {
     background-color: #d3d3d7;
 }
 

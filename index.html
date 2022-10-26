@@ -473,17 +473,18 @@
                             <p>Tổng số: <b>1035</b> bản ghi</p>
                         </div>
                         <div class="body__footer-right">
-                            <div class="select-record">
-                                <input type="text" class="select__record-input" value="20 bản ghi trên 1 trang">
-                                <button class="btn-icon btn-selectdown"></button>
-                                <div class="selectbox">
-                                    <div class="selectbox-item">10 bản ghi trên 1 trang</div>
-                                    <div class="selectbox-item">20 bản ghi trên 1 trang</div>
-                                    <div class="selectbox-item">30 bản ghi trên 1 trang</div>
-                                    <div class="selectbox-item">50 bản ghi trên 1 trang</div>
-                                    <div class="selectbox-item">100 bản ghi trên 1 trang</div>
+                            <div class="combobox select-record">
+                                <input type="text" class="input-main combobox__input select__record-input" value="20 bản ghi trên 1 trang">
+                                <button class="btn-selectdown combobox__button"></button>
+                                <div class="combobox__data" style="display: none;">
+                                    <div class="data-item">10 bản ghi trên 1 trang</div>
+                                    <div class="data-item">20 bản ghi trên 1 trang</div>
+                                    <div class="data-item">30 bản ghi trên 1 trang</div>
+                                    <div class="data-item">50 bản ghi trên 1 trang</div>
+                                    <div class="data-item">100 bản ghi trên 1 trang</div>
                                 </div>
                             </div>
+
                             <button class="btn btn-prev">Trước</button>
                             <div class="btn btn-pagination"></div>
                             <button class="btn btn-next">Sau</button>
@@ -495,7 +496,8 @@
 
 
     </div>
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js">
+    </script>
 </body>
 
 </html>
